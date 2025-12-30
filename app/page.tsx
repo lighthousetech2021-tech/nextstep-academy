@@ -1,3 +1,4 @@
+import BookingForm from "./BookingForm";
 export default function Home() {
   const whatsappBase = "https://wa.me/9779848961392";
   const whatsappMsg =
@@ -322,7 +323,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Contact */}
       <section id="contact" className="border-t bg-slate-50/40">
         <div className="mx-auto max-w-6xl px-4 py-12">
@@ -355,6 +355,7 @@ export default function Home() {
       </section>
     </main>
   );
-}
-import BookingForm from "./BookingForm";
+}{/* Book Class Section */}
 <BookingForm />
+
+
