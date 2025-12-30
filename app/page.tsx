@@ -1,7 +1,7 @@
 export default function Home() {
   const whatsappBase = "https://wa.me/9779848961392";
   const whatsappMsg =
-    "Hi NextStep Learning Academy! I want to join the Chinese Basic 45-day course.";
+  "Hi NextStep Learning Academy! I want to join the Chinese Basic 45-day course. Please share the next batch start date.";
   const whatsappLink = `${whatsappBase}?text=${encodeURIComponent(whatsappMsg)}`;
 
   return (
