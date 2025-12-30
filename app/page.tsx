@@ -220,7 +220,7 @@ export default function Home() {
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold text-blue-700">Teacher</div>
-              <div className="mt-2 text-xl font-bold">Mahan</div>
+              <div className="mt-2 text-xl font-bold">Soni</div>
               <p className="mt-3 text-sm text-slate-600">
                 Step-by-step learning: basics, grammar clarity, and guided
                 practice.
