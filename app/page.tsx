@@ -17,7 +17,48 @@ export default function Home() {
             </div>
           </div>
 
-          <nav className="hidden gap-6 text-sm text-slate-600 md:flex">
+          <nav className="hidden gap-6 text-sm text-slate-600 md:flex">      {/* Why Choose Us */}
+      <section className="border-t bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          <h2 className="text-2xl font-bold">Why Choose NextStep Learning Academy?</h2>
+          <p className="mt-2 text-slate-600">
+            Practical learning, clear guidance, and flexible study options — built
+            for real students.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-4">
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Online & Offline Classes</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Learn from anywhere online or attend offline classes in Butwal,
+                Rupandehi.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Experienced Teachers</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Learn Chinese with structured guidance from Mayi and Mahan.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Daily Practice Focus</div>
+              <p className="mt-2 text-sm text-slate-600">
+                2 hours of daily learning with regular speaking and revision.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">WhatsApp Support</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Quick guidance, class updates, and support directly on WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
             <a href="#courses" className="hover:text-slate-900">
               Courses
             </a>
