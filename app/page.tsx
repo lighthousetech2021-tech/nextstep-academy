@@ -1,7 +1,7 @@
 export default function Home() {
   const whatsappBase = "https://wa.me/9779848961392";
   const whatsappMsg =
-  "Hi NextStep Learning Academy! I want to join the Chinese Basic 45-day course. Please share the next batch start date.";
+    "Hi NextStep Learning Academy! I want to join the Chinese Basic 45-day course. Please share the next batch start date.";
   const whatsappLink = `${whatsappBase}?text=${encodeURIComponent(whatsappMsg)}`;
 
   return (
@@ -17,49 +17,7 @@ export default function Home() {
             </div>
           </div>
 
-          <nav className="hidden gap-6 text-sm text-slate-600 md:flex">      {/* Why Choose Us */}
-      <section className="border-t bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12">
-          <h2 className="text-2xl font-bold">Why Choose NextStep Learning Academy?</h2>
-          <p className="mt-2 text-slate-600">
-            Practical learning, clear guidance, and flexible study options — built
-            for real students.
-          </p>
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
-            <div className="rounded-2xl border border-slate-200 p-5">
-              <div className="font-semibold">Online & Offline Classes</div>
-              <p className="mt-2 text-sm text-slate-600">
-                Learn from anywhere online or attend offline classes in Butwal,
-                Rupandehi.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-slate-200 p-5">
-              <div className="font-semibold">Experienced Teachers</div>
-              <p className="mt-2 text-sm text-slate-600">
-                Learn Chinese with structured guidance from Mayi and Mahan.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-slate-200 p-5">
-              <div className="font-semibold">Daily Practice Focus</div>
-              <p className="mt-2 text-sm text-slate-600">
-                2 hours of daily learning with regular speaking and revision.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-slate-200 p-5">
-              <div className="font-semibold">WhatsApp Support</div>
-              <p className="mt-2 text-sm text-slate-600">
-                Quick guidance, class updates, and support directly on WhatsApp.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+          <nav className="hidden gap-6 text-sm text-slate-600 md:flex">
             <a href="#courses" className="hover:text-slate-900">
               Courses
             </a>
@@ -186,6 +144,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <section className="border-t bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          <h2 className="text-2xl font-bold">Why Choose NextStep Learning Academy?</h2>
+          <p className="mt-2 text-slate-600">
+            Practical learning, clear guidance, and flexible study options — built for real students.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Online & Offline Classes</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Learn from anywhere online or attend offline classes in Butwal, Rupandehi.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Experienced Teachers</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Learn Chinese with structured guidance from Mayi and Mahan.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">Daily Practice Focus</div>
+              <p className="mt-2 text-sm text-slate-600">
+                2 hours of daily learning with regular speaking and revision.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <div className="font-semibold">WhatsApp Support</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Quick guidance, class updates, and support directly on WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Courses */}
       <section id="courses" className="border-t bg-slate-50/40">
         <div className="mx-auto max-w-6xl px-4 py-12">
@@ -221,9 +219,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-700">
-                Coming Soon
-              </div>
+              <div className="text-sm font-semibold text-slate-700">Coming Soon</div>
               <div className="mt-2 text-xl font-bold">HSK Preparation</div>
               <p className="mt-3 text-sm text-slate-600">
                 Structured exam-focused training for HSK levels.
@@ -231,13 +227,10 @@ export default function Home() {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-700">
-                Coming Soon
-              </div>
+              <div className="text-sm font-semibold text-slate-700">Coming Soon</div>
               <div className="mt-2 text-xl font-bold">More Languages & Skills</div>
               <p className="mt-3 text-sm text-slate-600">
-                Japanese, Korean, English, Loksewa, Tuition, Computer classes and
-                more.
+                Japanese, Korean, English, Loksewa, Tuition, Computer classes and more.
               </p>
             </div>
           </div>
@@ -264,8 +257,7 @@ export default function Home() {
               <div className="text-sm font-semibold text-blue-700">Teacher</div>
               <div className="mt-2 text-xl font-bold">Mahendra Dhakal</div>
               <p className="mt-3 text-sm text-slate-600">
-                Step-by-step learning: basics, grammar clarity, and guided
-                practice.
+                Step-by-step learning: basics, grammar clarity, and guided practice.
               </p>
             </div>
           </div>
@@ -283,9 +275,7 @@ export default function Home() {
           <div className="mt-6 rounded-3xl border border-slate-200 bg-white p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <div className="text-lg font-semibold">
-                  Send your document on WhatsApp
-                </div>
+                <div className="text-lg font-semibold">Send your document on WhatsApp</div>
                 <div className="text-sm text-slate-600">
                   We’ll review and reply with timeline + price.
                 </div>
@@ -323,9 +313,7 @@ export default function Home() {
               <p className="mt-3 text-sm text-slate-600">Pay securely anytime.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-blue-700">
-                Bank / USD
-              </div>
+              <div className="text-sm font-semibold text-blue-700">Bank / USD</div>
               <div className="mt-2 text-xl font-bold">Bank Transfer / USD</div>
               <p className="mt-3 text-sm text-slate-600">
                 USD accepted (converted at current rate + 25% for tax/fees).
@@ -339,9 +327,7 @@ export default function Home() {
       <section id="contact" className="border-t bg-slate-50/40">
         <div className="mx-auto max-w-6xl px-4 py-12">
           <h2 className="text-2xl font-bold">Contact</h2>
-          <p className="mt-2 text-slate-600">
-            WhatsApp is the fastest way to reach us.
-          </p>
+          <p className="mt-2 text-slate-600">WhatsApp is the fastest way to reach us.</p>
 
           <div className="mt-6 rounded-3xl border border-slate-200 bg-white p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -363,8 +349,7 @@ export default function Home() {
           </div>
 
           <p className="mt-8 text-xs text-slate-500">
-            © {new Date().getFullYear()} NextStep Learning Academy. All rights
-            reserved.
+            © {new Date().getFullYear()} NextStep Learning Academy. All rights reserved.
           </p>
         </div>
       </section>
