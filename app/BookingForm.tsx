@@ -13,7 +13,7 @@ export default function BookingForm() {
   const whatsappBase = "https://wa.me/9779848961392";
 
   const [course, setCourse] = useState<Course>("Chinese");
-  const [shift, setShift] = useState<Shift>("6–8AM");
+  const [shift, setShift] = useState<Shift>("6-8AM");
   const [studentName, setStudentName] = useState("");
   const [nationality, setNationality] = useState("");
   const [phone, setPhone] = useState("");
