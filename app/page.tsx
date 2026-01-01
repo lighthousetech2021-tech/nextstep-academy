@@ -1,4 +1,5 @@
 import BookingForm from "./BookingForm";
+
 export default function Home() {
   const whatsappBase = "https://wa.me/9779848961392";
   const whatsappMsg =
@@ -31,19 +32,31 @@ export default function Home() {
             <a href="#payments" className="hover:text-slate-900">
               Payments
             </a>
+            <a href="#book" className="hover:text-slate-900 font-semibold">
+              Book Class
+            </a>
             <a href="#contact" className="hover:text-slate-900">
               Contact
             </a>
           </nav>
 
-          <a
-            className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
-            href={whatsappLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            WhatsApp
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
+              href="#book"
+            >
+              Book Now
+            </a>
+
+            <a
+              className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhatsApp
+            </a>
+          </div>
         </div>
       </header>
 
@@ -80,6 +93,12 @@ export default function Home() {
                 href="#courses"
               >
                 View Courses
+              </a>
+              <a
+                className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+                href="#book"
+              >
+                Book Class
               </a>
             </div>
 
@@ -148,16 +167,20 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="border-t bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12">
-          <h2 className="text-2xl font-bold">Why Choose NextStep Learning Academy?</h2>
+          <h2 className="text-2xl font-bold">
+            Why Choose NextStep Learning Academy?
+          </h2>
           <p className="mt-2 text-slate-600">
-            Practical learning, clear guidance, and flexible study options — built for real students.
+            Practical learning, clear guidance, and flexible study options —
+            built for real students.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-slate-200 p-5">
               <div className="font-semibold">Online & Offline Classes</div>
               <p className="mt-2 text-sm text-slate-600">
-                Learn from anywhere online or attend offline classes in Butwal, Rupandehi.
+                Learn from anywhere online or attend offline classes in Butwal,
+                Rupandehi.
               </p>
             </div>
 
@@ -220,7 +243,9 @@ export default function Home() {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-700">Coming Soon</div>
+              <div className="text-sm font-semibold text-slate-700">
+                Coming Soon
+              </div>
               <div className="mt-2 text-xl font-bold">HSK Preparation</div>
               <p className="mt-3 text-sm text-slate-600">
                 Structured exam-focused training for HSK levels.
@@ -228,10 +253,13 @@ export default function Home() {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-700">Coming Soon</div>
+              <div className="text-sm font-semibold text-slate-700">
+                Coming Soon
+              </div>
               <div className="mt-2 text-xl font-bold">More Languages & Skills</div>
               <p className="mt-3 text-sm text-slate-600">
-                Japanese, Korean, English, Loksewa, Tuition, Computer classes and more.
+                Japanese, Korean, English, Loksewa, Tuition, Computer classes and
+                more.
               </p>
             </div>
           </div>
@@ -258,7 +286,8 @@ export default function Home() {
               <div className="text-sm font-semibold text-blue-700">Teacher</div>
               <div className="mt-2 text-xl font-bold">Mahendra Dhakal</div>
               <p className="mt-3 text-sm text-slate-600">
-                Step-by-step learning: basics, grammar clarity, and guided practice.
+                Step-by-step learning: basics, grammar clarity, and guided
+                practice.
               </p>
             </div>
           </div>
@@ -276,7 +305,9 @@ export default function Home() {
           <div className="mt-6 rounded-3xl border border-slate-200 bg-white p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <div className="text-lg font-semibold">Send your document on WhatsApp</div>
+                <div className="text-lg font-semibold">
+                  Send your document on WhatsApp
+                </div>
                 <div className="text-sm text-slate-600">
                   We’ll review and reply with timeline + price.
                 </div>
@@ -306,15 +337,21 @@ export default function Home() {
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold text-blue-700">Nepal</div>
               <div className="mt-2 text-xl font-bold">eSewa</div>
-              <p className="mt-3 text-sm text-slate-600">Fast & simple payment.</p>
+              <p className="mt-3 text-sm text-slate-600">
+                Fast & simple payment.
+              </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold text-blue-700">Nepal</div>
               <div className="mt-2 text-xl font-bold">Khalti</div>
-              <p className="mt-3 text-sm text-slate-600">Pay securely anytime.</p>
+              <p className="mt-3 text-sm text-slate-600">
+                Pay securely anytime.
+              </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-blue-700">Bank / USD</div>
+              <div className="text-sm font-semibold text-blue-700">
+                Bank / USD
+              </div>
               <div className="mt-2 text-xl font-bold">Bank Transfer / USD</div>
               <p className="mt-3 text-sm text-slate-600">
                 USD accepted (converted at current rate + 25% for tax/fees).
@@ -323,11 +360,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ✅ Book Class Section (inserted in correct place) */}
+      <BookingForm />
+
       {/* Contact */}
       <section id="contact" className="border-t bg-slate-50/40">
         <div className="mx-auto max-w-6xl px-4 py-12">
           <h2 className="text-2xl font-bold">Contact</h2>
-          <p className="mt-2 text-slate-600">WhatsApp is the fastest way to reach us.</p>
+          <p className="mt-2 text-slate-600">
+            WhatsApp is the fastest way to reach us.
+          </p>
 
           <div className="mt-6 rounded-3xl border border-slate-200 bg-white p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -349,13 +392,11 @@ export default function Home() {
           </div>
 
           <p className="mt-8 text-xs text-slate-500">
-            © {new Date().getFullYear()} NextStep Learning Academy. All rights reserved.
+            © {new Date().getFullYear()} NextStep Learning Academy. All rights
+            reserved.
           </p>
         </div>
       </section>
     </main>
   );
-}{/* Book Class Section */}
-<BookingForm />
-
-
+}
