@@ -9,160 +9,196 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       {/* Top Bar */}
-      <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2">
-            <div className="h-9 w-9 rounded-xl bg-blue-600" />
-            <div className="leading-tight">
-              <div className="text-sm font-semibold">NextStep</div>
-              <div className="text-xs text-slate-500">Learning Academy</div>
-            </div>
-          </div>
+      {/* Header */}
+<header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    {/* Logo */}
+    <a href="#" className="flex items-center gap-3">
+      <div className="h-10 w-10 rounded-2xl bg-blue-600" />
+      <div className="leading-tight">
+        <div className="text-sm font-bold tracking-tight">NextStep</div>
+        <div className="text-xs text-slate-500">Learning Academy</div>
+      </div>
+    </a>
 
-          <nav className="hidden gap-6 text-sm text-slate-600 md:flex">
-            <a href="#courses" className="hover:text-slate-900">
-              Courses
-            </a>
-            <a href="#teachers" className="hover:text-slate-900">
-              Teachers
-            </a>
-            <a href="#translation" className="hover:text-slate-900">
-              Translation
-            </a>
-            <a href="#payments" className="hover:text-slate-900">
-              Payments
-            </a>
-            <a href="#book" className="hover:text-slate-900 font-semibold">
-              Book Class
-            </a>
-            <a href="#contact" className="hover:text-slate-900">
-              Contact
-            </a>
-          </nav>
+    {/* Menu */}
+    <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
+      <a href="#courses" className="hover:text-slate-900">Courses</a>
+      <a href="#teachers" className="hover:text-slate-900">Teachers</a>
+      <a href="#translation" className="hover:text-slate-900">Translation</a>
+      <a href="#payments" className="hover:text-slate-900">Payments</a>
+      <a href="#book" className="hover:text-slate-900">Book Class</a>
+      <a href="#contact" className="hover:text-slate-900">Contact</a>
+    </nav>
 
-          <div className="flex items-center gap-2">
-            <a
-              className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
-              href="#book"
-            >
-              Book Now
-            </a>
+    {/* Actions */}
+    <div className="flex items-center gap-2">
+      <a
+        href="#book"
+        className="hidden rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50 md:inline-flex"
+      >
+        Book Now
+      </a>
 
-            <a
-              className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
-              href={whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </header>
+      <a
+        className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+        href={whatsappLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  {/* Mobile Menu (simple) */}
+  <div className="border-t bg-white md:hidden">
+    <div className="mx-auto flex max-w-6xl gap-4 overflow-x-auto px-4 py-2 text-sm font-medium text-slate-700">
+      <a href="#courses">Courses</a>
+      <a href="#teachers">Teachers</a>
+      <a href="#translation">Translation</a>
+      <a href="#payments">Payments</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid gap-10 md:grid-cols-2 md:items-center">
-          <div>
-            <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-              Online & Offline • Butwal, Rupandehi, Nepal
-            </p>
+<section className="relative overflow-hidden">
+  {/* background gradient blobs */}
+  <div className="pointer-events-none absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gradient-to-r from-blue-500/20 via-sky-400/20 to-indigo-500/20 blur-3xl" />
+  <div className="pointer-events-none absolute -bottom-40 right-[-120px] h-[520px] w-[520px] rounded-full bg-gradient-to-r from-blue-600/15 via-cyan-400/15 to-sky-500/15 blur-3xl" />
 
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-              NextStep Learning Academy
-            </h1>
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <div className="grid gap-10 md:grid-cols-2 md:items-center">
+      {/* Left */}
+      <div>
+        <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-4 py-2 text-xs font-semibold text-blue-700 shadow-sm">
+          <span className="h-2 w-2 rounded-full bg-blue-600" />
+          Online & Offline • Butwal, Rupandehi, Nepal
+        </div>
 
-            <p className="mt-4 text-lg text-slate-600">
-              <span className="font-semibold text-slate-900">
-                Your Next Step to Global Learning.
-              </span>{" "}
-              Learn Languages. Build Your Future.
-            </p>
+        <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl">
+          Learn Smarter.
+          <span className="block bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent">
+            Speak Confidently.
+          </span>
+        </h1>
 
-            <div className="mt-7 flex flex-wrap gap-3">
-              <a
-                className="rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Enroll on WhatsApp
-              </a>
-              <a
-                className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
-                href="#courses"
-              >
-                View Courses
-              </a>
-              <a
-                className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
-                href="#book"
-              >
-                Book Class
-              </a>
-            </div>
+        <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
+          <span className="font-semibold text-slate-900">
+            NextStep Learning Academy
+          </span>{" "}
+          helps students build language confidence with daily practice, clear
+          guidance, and flexible shifts.
+        </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-slate-700">
-              <div className="rounded-2xl border border-slate-200 p-4">
-                <div className="font-semibold">Live Classes</div>
-                <div className="text-slate-500">Zoom / Google Meet</div>
-              </div>
-              <div className="rounded-2xl border border-slate-200 p-4">
-                <div className="font-semibold">Daily Learning</div>
-                <div className="text-slate-500">2 hours • 1 day off/week</div>
-              </div>
-              <div className="rounded-2xl border border-slate-200 p-4">
-                <div className="font-semibold">Shifts</div>
-                <div className="text-slate-500">6–8AM • 1–3PM • 7–9PM</div>
-              </div>
-              <div className="rounded-2xl border border-slate-200 p-4">
-                <div className="font-semibold">Support</div>
-                <div className="text-slate-500">WhatsApp-first help</div>
-              </div>
-            </div>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <a
+            href="#book"
+            className="rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-95"
+          >
+            Book a Class
+          </a>
+
+          <a
+            href="#courses"
+            className="rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+          >
+            View Courses
+          </a>
+
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl border border-blue-200 bg-blue-50 px-6 py-3 text-sm font-semibold text-blue-700 hover:bg-blue-100"
+          >
+            WhatsApp Enquiry
+          </a>
+        </div>
+
+        {/* Quick trust/info */}
+        <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-700 md:max-w-xl">
+          <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="font-semibold">Live Classes</div>
+            <div className="text-slate-500">Zoom / Google Meet</div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-gradient-to-b from-blue-50 to-white p-6 shadow-sm">
-            <div className="rounded-2xl bg-white p-6">
-              <div className="text-sm font-semibold text-blue-700">
-                Featured Program
-              </div>
-              <div className="mt-2 text-2xl font-bold">Chinese Basic Course</div>
-              <div className="mt-2 text-slate-600">
-                45 days • Beginner-friendly • Online + Offline
-              </div>
+          <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="font-semibold">Daily Learning</div>
+            <div className="text-slate-500">2 hours • 1 day off/week</div>
+          </div>
 
-              <div className="mt-5 rounded-2xl border border-slate-200 p-4 text-sm">
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">Price</span>
-                  <span className="font-semibold">NPR 15,000</span>
-                </div>
-                <div className="mt-2 flex items-center justify-between">
-                  <span className="text-slate-500">Schedule</span>
-                  <span className="font-semibold">Daily 2 hours</span>
-                </div>
-                <div className="mt-2 flex items-center justify-between">
-                  <span className="text-slate-500">Weekly off</span>
-                  <span className="font-semibold">1 day</span>
-                </div>
-              </div>
+          <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="font-semibold">Flexible Shifts</div>
+            <div className="text-slate-500">6–8AM • 1–3PM • 7–9PM</div>
+          </div>
 
-              <a
-                className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700"
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Join via WhatsApp
-              </a>
-
-              <p className="mt-3 text-center text-xs text-slate-500">
-                Ask questions, confirm shift, and enroll directly on WhatsApp.
-              </p>
-            </div>
+          <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="font-semibold">Fast Support</div>
+            <div className="text-slate-500">WhatsApp-first help</div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Right: Featured card */}
+      <div className="relative">
+        <div className="rounded-3xl border border-slate-200 bg-white/70 p-6 shadow-lg backdrop-blur">
+          <div className="rounded-2xl bg-white p-6">
+            <div className="text-sm font-semibold text-blue-700">
+              Featured Program
+            </div>
+            <div className="mt-2 text-2xl font-extrabold text-slate-900">
+              Chinese Basic Course
+            </div>
+            <div className="mt-2 text-slate-600">
+              45 days • Beginner-friendly • Online + Offline
+            </div>
+
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50/50 p-4 text-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-slate-500">Price</span>
+                <span className="font-semibold">NPR 15,000</span>
+              </div>
+              <div className="mt-2 flex items-center justify-between">
+                <span className="text-slate-500">Schedule</span>
+                <span className="font-semibold">Daily 2 hours</span>
+              </div>
+              <div className="mt-2 flex items-center justify-between">
+                <span className="text-slate-500">Weekly off</span>
+                <span className="font-semibold">1 day</span>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-3">
+              <a
+                href="#book"
+                className="inline-flex w-full justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-95"
+              >
+                Book This Course
+              </a>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-full justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+              >
+                Ask on WhatsApp
+              </a>
+            </div>
+
+            <p className="mt-3 text-center text-xs text-slate-500">
+              We’ll confirm next batch start date after booking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Us */}
       <section className="border-t bg-white">
