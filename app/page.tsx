@@ -9,60 +9,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       {/* Top Bar */}
-      {/* Header */}
-<header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
-  <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-    {/* Logo */}
-    <a href="#" className="flex items-center gap-3">
-      <div className="h-10 w-10 rounded-2xl bg-blue-600" />
-      <div className="leading-tight">
-        <div className="text-sm font-bold tracking-tight">NextStep</div>
-        <div className="text-xs text-slate-500">Learning Academy</div>
-      </div>
-    </a>
-
-    {/* Menu */}
-    <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
-      <a href="#courses" className="hover:text-slate-900">Courses</a>
-      <a href="#teachers" className="hover:text-slate-900">Teachers</a>
-      <a href="#translation" className="hover:text-slate-900">Translation</a>
-      <a href="#payments" className="hover:text-slate-900">Payments</a>
-      <a href="#book" className="hover:text-slate-900">Book Class</a>
-      <a href="#contact" className="hover:text-slate-900">Contact</a>
-    </nav>
-
-    {/* Actions */}
-    <div className="flex items-center gap-2">
-      <a
-        href="#book"
-        className="hidden rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50 md:inline-flex"
-      >
-        Book Now
-      </a>
-
-      <a
-        className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
-        href={whatsappLink}
-        target="_blank"
-        rel="noreferrer"
-      >
-        WhatsApp
-      </a>
-    </div>
-  </div>
-
-  {/* Mobile Menu (simple) */}
-  <div className="border-t bg-white md:hidden">
-    <div className="mx-auto flex max-w-6xl gap-4 overflow-x-auto px-4 py-2 text-sm font-medium text-slate-700">
-      <a href="#courses">Courses</a>
-      <a href="#teachers">Teachers</a>
-      <a href="#translation">Translation</a>
-      <a href="#payments">Payments</a>
-      <a href="#book">Book</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-
+      
       {/* Hero */}
 <section className="relative overflow-hidden">
   {/* background gradient blobs */}
