@@ -62,7 +62,6 @@ export default function Home() {
       <a href="#contact">Contact</a>
     </div>
   </div>
-</header>
 
       {/* Hero */}
 <section className="relative overflow-hidden">
